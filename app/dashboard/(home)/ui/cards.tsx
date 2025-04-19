@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import {
   BanknotesIcon,
   ClockIcon,
@@ -5,9 +6,8 @@ import {
   InboxIcon,
 } from "@heroicons/react/24/outline";
 import { lusitana } from "@/app/ui/fonts";
-import { fetchCardData } from "@/app/lib/data";
 import { shimmer } from "@/app/ui/skeletons";
-import { Suspense } from "react";
+import { fetchCardData } from "../api/fetch-card-data";
 
 const iconMap = {
   collected: BanknotesIcon,

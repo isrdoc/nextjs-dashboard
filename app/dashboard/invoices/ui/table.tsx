@@ -1,9 +1,9 @@
 import { Suspense } from "react";
 import Image from "next/image";
+import { formatDateToLocal, formatCurrency } from "@/app/lib/utils";
 import { UpdateInvoice, DeleteInvoice } from "@/app/ui/invoices/buttons";
 import InvoiceStatus from "@/app/ui/invoices/status";
-import { formatDateToLocal, formatCurrency } from "@/app/lib/utils";
-import { fetchFilteredInvoices } from "@/app/lib/data";
+import { fetchFilteredInvoices } from "../api/fetch-filtered-invoices";
 
 interface InvoicesTableProps {
   query: string;

@@ -1,4 +1,4 @@
-import { sql } from "@/app/lib/data";
+import { sql } from "@/app/lib/database";
 import { ITEMS_PER_PAGE } from "./pagination-config";
 
 export async function fetchInvoicesPages(query: string) {

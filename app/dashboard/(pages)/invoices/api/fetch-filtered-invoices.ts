@@ -1,4 +1,4 @@
-import { sql } from "@/app/lib/data";
+import { sql } from "@/app/lib/database";
 import { InvoicesTable } from "@/app/lib/definitions";
 import { ITEMS_PER_PAGE } from "./pagination-config";
 

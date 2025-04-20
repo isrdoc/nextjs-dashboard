@@ -1,5 +1,5 @@
 import { formatCurrency } from "@/app/lib/utils";
-import { sql } from "@/app/lib/data";
+import { sql } from "@/app/lib/database";
 import { LatestInvoiceRaw } from "@/app/lib/definitions";
 
 export async function fetchLatestInvoices() {

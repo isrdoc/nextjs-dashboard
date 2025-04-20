@@ -1,4 +1,4 @@
-import { sql } from "@/app/lib/data";
+import { sql } from "@/app/lib/database";
 import { Revenue } from "@/app/lib/definitions";
 
 export async function fetchRevenue() {

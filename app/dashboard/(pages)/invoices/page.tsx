@@ -4,6 +4,11 @@ import Search from "@/app/ui/search";
 import Table from "./ui/table/table";
 import { CreateInvoice } from "./ui/table/row-action-buttons";
 import { fetchInvoicesPages } from "./api/fetch-invoices-pages";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Invoices",
+};
 
 export default async function Page(props: {
   searchParams?: Promise<{

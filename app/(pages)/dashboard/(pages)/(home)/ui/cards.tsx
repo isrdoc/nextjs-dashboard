@@ -7,7 +7,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { lusitana } from "@/app/ui/fonts";
 import { shimmer } from "@/app/ui/skeletons";
-import { fetchCardData } from "@/app/dashboard/(pages)/(home)/api/fetch-card-data";
+import { fetchCardData } from "@/app/(pages)/dashboard/(pages)/(home)/api/fetch-card-data";
 
 const iconMap = {
   collected: BanknotesIcon,

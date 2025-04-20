@@ -1,7 +1,7 @@
 import { generateYAxis } from "@/app/lib/utils";
 import { CalendarIcon } from "@heroicons/react/24/outline";
 import { lusitana } from "@/app/ui/fonts";
-import { fetchRevenue } from "@/app/dashboard/(pages)/(home)/api/fetch-revenue";
+import { fetchRevenue } from "@/app/(pages)/dashboard/(pages)/(home)/api/fetch-revenue";
 import { shimmer } from "@/app/ui/skeletons";
 import { Suspense } from "react";
 

@@ -6,7 +6,7 @@ import { PencilIcon, PlusIcon, TrashIcon } from "@heroicons/react/24/outline";
 import {
   deleteInvoice,
   State,
-} from "@/app/dashboard/(pages)/invoices/api/invoices-actions";
+} from "@/app/(pages)/dashboard/(pages)/invoices/api/invoices-actions";
 import toast from "react-hot-toast";
 
 export function CreateInvoice() {

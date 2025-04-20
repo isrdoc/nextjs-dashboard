@@ -1,8 +1,8 @@
 import { lusitana } from "@/app/ui/fonts";
 import Pagination from "@/app/ui/pagination";
 import Search from "@/app/ui/search";
-import Table from "./ui/table";
-import { CreateInvoice } from "@/app/ui/invoices/buttons";
+import Table from "./ui/table/table";
+import { CreateInvoice } from "./ui/table/row-action-buttons";
 import { fetchInvoicesPages } from "./api/fetch-invoices-pages";
 
 export default async function Page(props: {
@@ -11,6 +11,7 @@ export default async function Page(props: {
     page?: string;
   }>;
 }) {
+  // TODO: Persist the search params in database to be able to use on server side
   const searchParams = await props.searchParams;
   const query = searchParams?.query || "";
   const currentPage = Number(searchParams?.page) || 1;

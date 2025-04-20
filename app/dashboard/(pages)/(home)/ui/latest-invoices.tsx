@@ -2,7 +2,7 @@ import { ArrowPathIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import Image from "next/image";
 import { lusitana } from "@/app/ui/fonts";
-import { fetchLatestInvoices } from "../api/fetch-latest-invoices";
+import { fetchLatestInvoices } from "@/app/dashboard/(pages)/(home)/api/fetch-latest-invoices";
 import { Suspense } from "react";
 import { shimmer } from "@/app/ui/skeletons";
 

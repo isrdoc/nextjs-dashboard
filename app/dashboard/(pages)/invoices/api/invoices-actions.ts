@@ -3,7 +3,7 @@
 import { z } from "zod";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import { sql } from "../../../../lib/database";
+import { sql } from "@/app/lib/database";
 
 const FormSchema = z.object({
   id: z.string(),
@@ -28,6 +28,7 @@ export async function createInvoice(formData: FormData) {
     VALUES (${customerId}, ${amountInCents}, ${status}, ${date})
     `;
   } catch (error) {
+    console.log("Database Error:", error);
     return { message: "Database Error: Failed to Create Invoice." };
   }
   revalidatePath("/dashboard/invoices");
@@ -48,6 +49,7 @@ export async function updateInvoice(id: string, formData: FormData) {
     WHERE id = ${id}
   `;
   } catch (error) {
+    console.log("Database Error:", error);
     return { message: "Database Error: Failed to Update Invoice." };
   }
   revalidatePath("/dashboard/invoices");
@@ -59,6 +61,7 @@ export async function deleteInvoice(id: string) {
     await sql`DELETE FROM invoices WHERE id = ${id}`;
     revalidatePath("/dashboard/invoices");
   } catch (error) {
+    console.log("Database Error:", error);
     return { message: "Database Error: Failed to Delete Invoice." };
   }
 }

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { formatDateToLocal, formatCurrency } from "@/app/lib/utils";
 import { UpdateInvoice, DeleteInvoice } from "./row-action-buttons";
 import InvoiceStatus from "./status-cell";
-import { fetchFilteredInvoices } from "../../api/fetch-filtered-invoices";
+import { fetchFilteredInvoices } from "@/app/dashboard/(pages)/invoices/api/fetch-filtered-invoices";
 
 interface InvoicesTableProps {
   query: string;

@@ -90,7 +90,7 @@ export default function Header() {
               href="/contact"
               className="ml-8 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#6276B7] hover:bg-[#7286C7] transition-colors"
             >
-              Let's talk
+              Let&apos;s talk
             </Link>
           </div>
 
@@ -114,7 +114,7 @@ export default function Header() {
                   href="/contact"
                   className="block px-3 py-2 rounded-md text-sm font-medium text-white bg-[#6276B7] hover:bg-[#7286C7] transition-colors"
                 >
-                  Let's talk
+                  Let&apos;s talk
                 </Link>
               </div>
             </div>

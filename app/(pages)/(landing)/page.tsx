@@ -1,5 +1,12 @@
 import Header from "./ui/header";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Head Diagnostics",
+  description:
+    "Precision brain health diagnostics & monitoring solutions for patients, clinicians, and researchers.",
+};
 
 export default function Page() {
   return (
